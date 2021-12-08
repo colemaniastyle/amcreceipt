@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/main.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <style>
+    /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: auto;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+    @media only screen and (min-width: 960px){
+      .header{
+        width: 800px;
+      }
+      .logo{
+        position: relative;
+        top: -40px;
+        left: -40px;
+        height: 200px;
+        width: 200px;
+      }
+      .showtimes{
+        position: relative;
+        top: 10px;
+        left: -10px;
+      }
+      .amcid{
+        position: relative;
+        left: -209px;
+        top: -24px;
+      }
+      .alist{
+        width: 800px;
+      }
+      .thankyou{
+        width: 350px;
+        position: relative;
+        left: 120px;
+        top: -150px;
+
+      }
+      .order{
+        width: 750px;
+      }
+      .details{
+        width: 750px;
+      }
+      .theh3{
+        width: 300px;
+      }
+      .ticket{
+        width: 750px;
+      }
+      .rating{
+        width: 750px;
+      }
+      .summary{
+        width: 750px;
+      }
+      .theater{
+        width: 750px;
+      }
+      .refund{
+        width: 750px;
+      }
+      .connect{
+        width: 750px;
+      }
+      .social{
+        width: 1000px;
+      }
+      .closing{
+        width: 600px;
+      }
+      .m1{
+         top: 25px;
+         height: 400px;
+         width: 750px;
+      }
+      .dl{
+        position: relative;
+        top: -90px;
+        left: 75px;
+      }
+		}
+		/* midsize
+		@media only screen and (max-width: 960px){
+      .header{
+        width: 100%;
+      }
+		}
+    /* mobile */
+    @media only screen and (max-width: 960px){
+      .header{
+        width: 100%;
+      }
+      .logo{
+        position: relative;
+        top: -40px;
+        left: -40px;
+        height: 100px;
+        width: 100px;
+      }
+      .showtimes{
+        position: relative;
+        top: -190px;
+        left: -10px;
+      }
+      .amcid{
+        position: relative;
+        left: 39px;
+        top: -14px;
+      }
+      .thankyou{
+        padding: 20px;
+        position: relative;
+        left: -50px;
+        top: -20px;
+        width: 190px;
+      }
+      .alist{
+        width: 90%;
+        padding: 50px;
+      }
+      .order{
+        width: 100%;
+      }
+      .details{
+        width: 100%;
+      }
+      .theh3{
+        width: 100%;
+      }
+      .ticket{
+        width: 100%;
+      }
+      .rating{
+        width: 100%;
+      }
+      .summary{
+        width: 100%;
+      }
+      .theater{
+        width: 100%;
+      }
+      .refund{
+        width: 100%;
+      }
+      .connect{
+        width: 100%;
+      }
+      .social{
+        width: 100%;
+      }
+      .foot{
+        width: 70%;
+      }
+      .closing{
+        width: 70%;
+      }
+      .ib{
+        display: inline-block;
+      }
+      .barcode{
+        height: 100px;
+        weight: 100px;
+      }
+      .m1{
+        top: 15px;
+        width: 350px;
+      }
+      .dl{
+        position: relative;
+        top: -10px;
+        left: 120px;
+      }
+    }
+  @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+    </style>
+
+
+  </head>
+    <body style="background: black; font-family: 'Arimo', sans-serif;">
+
+    <table class="header" align="center" style="background: #070201; /* Old browsers */
+        background: -moz-linear-gradient(left, #070201 0%, #a8a8a8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #070201 0%,#a8a8a8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #070201 0%,#a8a8a8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#070201', endColorstr='#a8a8a8',GradientType=1 ); /* IE6-9 *">
+
+      <tr>
+	      <td>
+          <a href="index.html">
+          <img class="logo" src="img/amc.png" style="padding: 50px;"></a>
+          <table class="showtimes" align="right" style="padding: 50px;">
+            <tr>
+              <td> <!-- <a href="http://view.email.amctheatres.com/"
+                style="color: white; font-size: 12px;">Can't See This Email? View Online</a> -->
+                <table>
+                  <tr>
+                    <td>
+                      <a href="https://www.amctheatres.com/showtimes">
+                        <img src="img/tickets3.png" width="150px" style="position: relative; left: 12px; padding: 5px;"></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <p class="amcid" style="color: white;">Leah Coleman - #1101000413228913</p>
+          </table>
+                <tr>
+                  <td style="color: white; background: #3BBCD9; padding: 9px; font-weight: 700;">
+                    <table>
+                      Thank You For Your Order
+                  </td>
+                </tr>
+                    </table>
+               </td>
+            </tr>
+
+
+
+<table class="alist" align="center" height="500px">
+  <tr>
+    <th>
+      <table class="m1" style="color: red; border: 4px solid red;
+      position: relative;">
+        <tr>
+          <td align="left">
+<a href="https://www.amctheatres.com/amcstubs/alist">
+            <img src="img/A-list_red.png" height="150px" width="250px" style="padding: 30px;"></a>
+          <table class="thankyou"><tr><td style="color: white;">
+              <h3 style="font-size: 20px; color: red; font-weight: 700;">Leah Coleman - #1101000413228913</h3><br>
+<h3 style="font-weight: 700;">Thank you for being an
+<br>AMC Stubs A-List™ member.</h3><br>
+<h5>
+Be sure to download the AMC Theatres app to access your virtual card, view your rewards, and so much more...right from your phone!</h5>
+
+</td></tr>
+
+</table>
+<a href="https://www.amctheatres.com/about/on-demand">
+<img class="dl" src="https://i.postimg.cc/d3p65tbK/dl.png"></a>
+</td>
+</tr>
+</table>
+</th></tr>
+</table>
+
+<table class="order" align="center" style="background: white; font-weight: 700; font-size: 22px; "><tr>
+  <td style="padding: 10px">
+  <h2 style="padding: 10px;"><br>
+Your Order Details<br><br>
+<span style="position: relative; left: 20px;">
+It's a movie night!<br>
+Here's a recap of your order.</span></h2><br>
+<h3 style="border-bottom: 3px solid gray; padding: 10px; font-size: 16px;">
+<span style="position: relative; left: 20px;">
+Order Number:
+<a style="color: #92D9FF;" href="http://view.email.amctheatres.com/">
+   329938841</a><br><br>
+
+Order Date: 7/26/2019<br><br>
+
+Total Amount: $0.00<br><br></span>
+</h3><h3 style="border-bottom: 3px solid gray; padding: 10px">
+  <table>
+    <tr>
+      <td style="position: relative; top: 25px; padding: 10px;">
+  <img src="http://image.email.amctheatres.com/lib/fe5b1570726201787013/m/5/Receipt_MobilePhone.png" alt="">
+
+      </td>
+        <td style="padding: 20px; position: relative; top: -20px;">
+
+        <p style="font-size: 18px;">Wondering how you get your movie ticket? It's in your hand! Skip the box office — <span style="color: red;">Show the ticket-taker your photo ID and the QR code below</span> and go right into your theatre!</p>
+      </td>
+    </tr>
+  </table>
+
+
+</h3></td></tr></table>
+<table class="details" align="center" style="background: white;"><tr><td class="ib">
+<h3 style="padding: 10px; font-weight: 700; position: relative; left: 30px;">
+Your Ticket Reservation Details<br><br>
+Ticket Confirmation#:
+<a style="color: red;" href="http://view.email.amctheatres.com/">
+   0594984466</a><br><br></h3>
+
+<h3 align="center" class="theh3"><img src="img/poster.jpg" height="293px" width="192px" style="-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);"></h3><td class="ib" style=" border-bottom: 3px solid gray; padding: 10px;">
+<p style="font-size: 20px; position: relative; left: 10px; border-bottom: 3px solid gray;">  <span style="font-weight: 700;">Once Upon A Time In Hollywood</span>	<img src="img/r.png" height="20px" width="20px" style="padding: 8px;"></b><br><br>
+9:00 PM 7/27/2019<br><br>
+AMC DINE-IN South Bay Galleria 16</p>
+<br>
+
+<span style="font-weight: 700; font-size: 18px;">
+DINE-IN DELIVERY TO SEAT</span><br>
+<br>
+A fresh take on movies with a menu. Choose from a selection of our chef's handcrafted favorites. Order at the counter, then head to your reserved recliner seat. We'll deliver right to your table.
+<br><br>
+<span style="font-weight: 700;">Don't leave your rewards on the table.</span><br>
+<br>
+Your meals could add up to delicious $5 rewards! Provide your virtual AMC Stubs card or account number at the theatre to earn points.
+</td></tr>
+</table>
+</h3>
+
+<table class="ticket" align="center" style="background: white;">
+  <tr align="right">
+    <td align="right">
+      <table align="right" style="font-size: 14px;"><tr><td style="padding: 15px;">
+      <p align="center"><span style="font-weight: 700;">Leah Coleman</span></p>
+      <p align="center"><img class="barcode" src="img/barcode.png" style="border-radius: 50%; border: 7px solid red;"></p>
+      <p align="center" style="color: red; font-size: 14px;"><span style="font-weight: 700;">Photo ID Required</span></p>
+    </td>
+    <td align="left" width="250px">
+      <p><span style="font-weight: 700;">Auditorium:</span> 11<br>
+      <br>
+      <span style="font-weight: 700;">Reserved Seats:</span> G6<br>
+      <br>
+      <span style="font-weight: 700;">Ticket:</span> 1 Adult; $16.19<br>
+      <br>
+      <span style="font-weight: 700;">AMC Stubs A-List Savings:</span> -$16.19<br>
+      <br>
+      <span style="font-weight: 700;">Ticket Total:</span> $0.00<br>
+      <br>
+      <span style="font-weight: 700;">Convenience Fee:</span> $1.89<br></p><br>
+    </td></tr></table>
+    </td>
+  </tr>
+</table>
+<table align="center" class="rating" style="background: white; border-bottom: 3px solid gray;">
+  <tr>
+    <td><table align="right" style="width: 250px;"><tr><td>
+      <p style="padding: 20px; font-size: 14px;"><b>Rated-R Film Age Policy:</b>
+        Guests must be 17 or older unless accompanied by a parent or guardian (age 21 or older).
+        Guests 25 years and under must show ID.
+        We restrict children younger than 6 from attending R-Rated films after 6pm to improve the experience for everyone.
+        To bring your children younger than 6 to R-Rated films, please visit us before 6pm.</p>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table align="center" class="summary" style="background: white; border-bottom: 3px solid gray; font-weight: 700;">
+  <tr>
+    <td>
+      <p style="font-size: 19px;  position: relative; left: 20px;"><br>Summary</p><br>
+      <p style="color: red; position: relative; left: 4  0px;">Total Amount: $0.00</p><br><br>
+    </td>
+  </tr>
+</table>
+<table align="center" class="theater" style="background: white; border-bottom: 3px solid gray;">
+  <tr>
+    <td><br>
+      <p style="font-size: 21px; position: relative; left: 20px;"><span style="font-weight: 700;">Theatre Information</span></p><br>
+      <p style="font-size: 16px; position: relative; left: 45px;">
+      Need directions to the theatre?<br> We've got you covered.<br><br>
+      <span style="font-weight: 700;">AMC DINE-IN South Bay Galleria 16</span><br><br>
+      1815 Hawthorne Blvd - Ste 368<br><br>
+      Redondo Beach, CA 90278-3420<br>
+      <br>
+      <span style="font-weight: 700;">(310) 793-7477</span><br>
+    </p><br>
+    <a style="color: black; text-decoration: none;" href="https://www.bing.com/maps?v=2&lvl=9&style=r&mode=D&rtop=0~0~0~&cp=33.8681020000~-118.3563180000&rtp=adr.~pos.33.8681020000_-118.3563180000_AMC+DINE-IN+South+Bay+Galleria+16+1815+Hawthorne+Blvd+-+Ste+368+REDONDO+BEACH+CA+90278-3420&toWww=1&redig=F09E801D34B24D469E21C62A9D76C94F">
+      <p style="border: 1px solid black; border-radius: 20px; width: 112px; padding: 8px; font-weight: 700;" align="center">Get Directions</p></a>
+      <br>
+    </td>
+  </tr>
+</table>
+
+<table align="center" class="refund" style="background: white; border-bottom: 3px solid gray;">
+  <tr>
+    <td style="padding: 20px;">
+      <p style="font-size: 17px;"><span style="font-weight: 700; font-size: 18px;">Change of plans?</span></p><br>
+      <p style="font-size: 17px;">You may cancel your A‑List reservation before the posted showtime.
+        To do so, please use your Order Number (329938841) to begin.</p><br>
+
+    <a href="http://view.email.amctheatres.com/"
+       style="font-weight: 700; color: red; font-size: 16px;"><u> Request a Cancellation ></u></a><br><br>
+
+      <p style="font-size: 16px;"><span style="font-weight: 700;">Please note:</span> If you do not cancel your ticket and you are a no‑show, this reservation will apply against your weekly benefit.
+      </p>
+    </td>
+  </tr>
+</table>
+<table align="center" class="connect" style="background: white;">
+  <tr>
+    <td style="position: relative; left: 30px;"><a href="https://www.amctheatres.com/wi-fi">
+      <img src="img/wifi.jpg" style="padding: 20px; position: relative; left: -30px;"></a>
+      <p style="font-size: 19px;"><span style="font-weight: 700;">Connect & Enjoy in the Lobby</span></p><br>
+      <p style="font-size: 16px; width: 350px;">Free Wi-Fi access is available to our AMC Stubs® members. Select the AMC Stubs Member Wi‑Fi network to sign in and start browsing!</p><br>
+      <p style=" font-size: 19px;"><a href="https://www.amctheatres.com/wi-fi"
+         style="font-weight: 700; color: red; text-decoration: none;">Learn More</a><br>
+      </p><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center" class="social" style="color: white; background: black;">
+  <tr>
+    <td align="center">
+      <a href="https://www.amctheatres.com/our-brands/amc-CLASSIC">
+      <img src="img/amcclassic.png"></a>
+      <a href="http://www.amctheatres.com/">
+      <img src="img/amctiny.png"></a>
+      <a href="https://www.amctheatres.com/food-and-drink/dine-in">
+      <img src="img/amcdinein.png"></a><br><br>
+      <p class="foot" align="center">
+        <a href="https://www.facebook.com/amctheatres">
+        <img src="img/face.png" height="50px" weight="50px"></a>
+        <a href="https://twitter.com/amctheatres">
+        <img src="img/tweet.png" height="50px" weight="50px"></a>
+        <a href="https://www.instagram.com/amctheatres/">
+        <img src="img/ig.png" height="50px" weight="50px"></a>
+        <a href="https://www.youtube.com/user/amctheatres">
+        <img src="img/yt.png" height="50px" weight="50px"></a><br><br></p>
+
+    </td>
+  </tr>
+</table>
+<table class="closing" align="center" style="color: white; background: black; font-size: 10px;">
+  <tr>
+    <td align="center"> No refunds after printed showtime. <br><br> Membership terms and benefits are subject to change. Valid at participating AMC Theatres locations only.
+      Monthly recurring charge until cancellation. Check individual showtimes for details. Exclusions may apply.
+<a href="http://view.email.amctheatres.com/" style="color: white;">
+      Click here</a> for an overview of benefits and complete list of applicable terms and conditions.<br><br>
+
+      We've sent you this email because we know how much you love the movies.<br>
+      If you'd rather not receive messages like this from AMC, please update your email preferences.<br><br>
+
+      This email was sent by: AMC Theatres, 11500 Ash Street, Leawood, KS 66211<br><br>
+      <a style="color: white;" href="https://www.amctheatres.com/help">
+<br><br><br><br>
+       	Contact Us</a>	 | 	<a style="color: white;" href="https://www.amctheatres.com/privacy-policy">
+        Privacy Policy</a>	 | 	<a style="color: white;" href="http://view.email.amctheatres.com/">
+        Unsubscribe</a><br><br><br><br>
+      © 2019 AMC</td>
+  </tr>
+</table><br><br><br><br>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
